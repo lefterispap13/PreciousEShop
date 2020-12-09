@@ -55,58 +55,7 @@ public class Database {
     
     // INSERT, UPDATE, DELETE <--- int result ----> executeUpdate
     // SELECT                 <--- ResultSet  ----> executeQuery
-    
-   
-    
-    public int insertProduct(Product p, String tableName) {
-        // INSERT INTO `products`(`name`, `price`, `quantity`) 
-        // VALUES("Fixit Kit", "187,65", "1")
-        int result = 0;
-        StringBuilder sb = new StringBuilder();
-        
-        sb.append("INSERT INTO ");
-        sb.append("`"); sb.append(tableName); sb.append("`");
-        sb.append("(`name`, `price`, `quantity`)");
-        sb.append(" VALUES(");
-        sb.append("\""); sb.append(p.getName()); sb.append("\""); sb.append(",");
-        sb.append("\""); sb.append(p.getPrice()); sb.append("\""); sb.append(",");
-        sb.append("\""); sb.append(p.getQuantity()); sb.append("\"");
-        sb.append(")");
-        try {
-            //        System.out.println(sb.toString());
-            statement = con.createStatement();
-            result = statement.executeUpdate(sb.toString());
-        } catch (SQLException ex) {
-            Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return(result);
-    }
-    
-//    public int insertOrder(Scanner sc) {
-//        int result = 0;
-//        
-//        /*  
-//            Step    1 - Select customer 
-//                    1.1 SELECT * FROM customers
-//                    1.2 PRINT customers
-//                    1.3 From cmd choose customer
-//            Step    2 - Select products
-//                    2.1 SELECT * FROM products
-//                    2.2 PRINT products
-//                    2.3 From cmd choose products
-//            Step    3 - Sum products
-//            Step    4 - insertOrder()
-//            Step    5 - insertProductDetails()
-//        */
-//        int customerId = selectCustomer(sc);
-//        List<ProductDTO> productsIdsQuantities = selectProducts(sc);
-//        System.out.println(productsIdsQuantities);
-//        double sumPricesOfSelectedProducts = sumProductsPrices(productsIdsQuantities);
-//        addOrder(customerId, sumPricesOfSelectedProducts, "orders2");
-//        
-//        return(result);
-//    }
-    
+
     public int addOrder(int customerId, double totalPrice, String tableName) {
         // INSERT INTO orders2(`customers_id`, `total_price`, `date`) 
         // VALUES(1, 187.65, "2020-12-03"), (1, 4128.3, "2020-12-03")

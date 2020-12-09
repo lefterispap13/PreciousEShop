@@ -1,3 +1,4 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%-- 
     Document   : errorinsertproduct
     Created on : Dec 9, 2020, 1:19:02 PM
@@ -23,6 +24,9 @@
         <title>Result Insert Product - <%= request.getContextPath() %></title>
     </head>
     <body>
+        <%--<c:import url="../../static/menu.jsp"></c:import> perfect for inter comms --%>
+        <%--<jsp:include page="../../static/menu.jsp" /> on own web app --%>
+        <%@ include file="../../static/menu.jsp" %>
         <h1>Result Insert Product</h1>
         <div class="<%= errMsg %>">
             <p><h4><%= errMsg.toUpperCase() %> Code...:   <%= request.getAttribute("errorCode") %></h4></p>
