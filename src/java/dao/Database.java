@@ -40,8 +40,8 @@ public class Database {
     public Database() {
         
         username = "root";
-        password = "CB12FT_Java!";
-        database = "eshop1";
+        password = "Lefterispap1908";
+        database = "eshop";
         server = "jdbc:mysql://localhost:3306/" + database + "?useSSL=false&serverTimezone=Europe/Athens";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
