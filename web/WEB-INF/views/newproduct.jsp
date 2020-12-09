@@ -13,10 +13,10 @@
     </head>
     <body>
         <h1>New Product Data</h1>
-        <form name="newproduct" action="/product" method="POST">
+        <form name="newproduct" action="<%= request.getContextPath() %>/product" method="POST">
             Name:       <input type="text" name="name" value="" /><br />
-            Price:      <input type="text" name="price" value="" size="4" maxlength="4" /><br/>
-            Quantity:   <input type="text" name="quantity" value="" size="3" /><br />
+            Price:      <input type="text" name="price" value="" size="6" maxlength="8" /><br/>
+            Quantity:   <input type="text" name="quantity" value="" size="6" maxlength="8" /><br />
             <input type="submit" value="Save Product" name="saveproduct" />
         </form>
     </body>
