@@ -22,6 +22,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Result Insert Product - <%= request.getContextPath() %></title>
+        <link rel='stylesheet' type='text/css' href='static/css/styles.css'>
     </head>
     <body>
         <%--<c:import url="../../static/menu.jsp"></c:import> perfect for inter comms --%>
