@@ -4,7 +4,17 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/web/WEB-INF/views/insertproductresult.jsp</file>
+            <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/src/java/dao/ICustomerDao.java</file>
+            <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/src/java/controllers/Customer.java</file>
+            <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/src/java/dao/ProductDao.java</file>
+            <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/src/java/services/ResultService.java</file>
+            <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/src/java/models/Customer.java</file>
+            <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/src/java/services/ProductService.java</file>
             <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/src/java/controllers/Login.java</file>
+            <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/src/java/services/CustomerService.java</file>
+            <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/src/java/dao/Database.java</file>
+            <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/src/java/dao/CustomerDao.java</file>
+            <file>file:/C:/Users/Home/Documents/GitHub/PreciousEShop/src/java/controllers/Product.java</file>
         </group>
     </open-files>
 </project-private>
