@@ -11,6 +11,7 @@ import java.io.Serializable;
  *
  * @author George.Pasparakis
  */
+
 public class Product implements Serializable{
     private String name;
     private double price;

@@ -12,6 +12,8 @@
         <title>New Product - Precious EShop</title>
     </head>
     <body>
+        <jsp:useBean id="customer" class="models.Customer" scope="application"/>
+        <h1>Hello dear <jsp:getProperty name="customer" property="email" /></h1>
         <h1>New Product Data</h1>
         <form name="newproduct" action="<%= request.getContextPath() %>/product" method="POST">
             Name:       <input type="text" name="name" value="" /><br />
